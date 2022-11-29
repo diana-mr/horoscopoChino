@@ -6,6 +6,7 @@ workbox.precaching.precacheAndRoute([
     'index.html',
     'horoscopo.html',
     'gallo.html',
+    'añoTigre',
     'offline.html',
     'icon/horoscopo.png',
     'icon/offline.png',
