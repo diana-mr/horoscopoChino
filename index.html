@@ -9,6 +9,15 @@
     <script src="js/bootstrap.js"></script>
     <link rel="manifest" href="manifest.webmanifest">
     <script src="app.js"></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+      <script>
+        window.OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+          OneSignal.init({
+            appId: "b6ec06eb-aa4f-44c1-8806-8e6473716357",
+          });
+        });
+      </script>
   </head>
 
   <body>
@@ -93,15 +102,6 @@
           let notif = new Notification(nTitle,options);
           setTimeout(randomNotificacion,10000);
         }
-      </script>
-      <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-      <script>
-        window.OneSignal = window.OneSignal || [];
-        OneSignal.push(function() {
-          OneSignal.init({
-            appId: "b6ec06eb-aa4f-44c1-8806-8e6473716357",
-          });
-        });
       </script>
   </body>
 </html>
